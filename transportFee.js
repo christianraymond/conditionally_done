@@ -1,15 +1,15 @@
-var transportFee = function(){
-  if('Mornig shift'){
-    return 'R'+20;
-  }
-  if('Night shift'){
-    return 'R'+10;
-  }
-  else{
-    return 'Get transport at work';
-  }
-}
-console.log(transportFee());
+// var transportFee = function(){
+//   if('Mornig shift'){
+//     return 'R'+20;
+//   }
+//   if('Afternoon shift'){
+//     return 'R'+10;
+//   }
+//   else{
+//     return 'Get transport at work';
+//   }
+// }
+// console.log(transportFee());
 
 const assert = require('assert');
 
