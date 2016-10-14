@@ -1,10 +1,14 @@
-var weekOrWeekend = function(day){
+const assert = require('assert');
+
+var  weekOrWeekend = function(day){
   if(day.startsWith('S') && day.endsWith('day')){
-    return "It's:\nWeeked";
+    return 'weekend';
   }
-    else{
-      return "It's:\nWeekday.";
+  else{
+    return 'week';
   }
 };
-var chooseDay = weekOrWeekend;
-console.log(chooseDay("Saturday."));
+
+assert.equal(weekOrWeekend('Sunday'), 'weekend');
+assert.equal(weekOrWeekend('Wednesday'), 'week');
+console.log (weekOrWeekend('Monday'));

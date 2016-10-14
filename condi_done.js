@@ -1,11 +1,9 @@
-
 var autoAlarm = function(tommorow){
   if (tommorow.startsWith('S') && tommorow.endsWith('day')){
-    return '8:00am';
+    return "Ring,ring, It's \n 8:00am \n wake-up...";
   }
   else{
-  return '05:00am';
+  return "Ring,ring, It's \n 05:00am \n wake-up...";
   }
 };
-var upTime = autoAlarm;
-console.log(upTime('Tuesday'));
+console.log(autoAlarm('Saturday'));
